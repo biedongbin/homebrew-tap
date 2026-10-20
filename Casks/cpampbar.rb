@@ -1,6 +1,6 @@
 cask "cpampbar" do
   version "1.1.2"
-  sha256 ""
+  sha256 "37a336fdb7c311aacbf8647c661a4b870a06e6072023db130dcaad28cf406470"
 
   url "https://github.com/biedongbin/cpamp-start-bar/releases/download/v#{version}/CpampBar-#{version}.app.zip"
   name "CpampBar"
