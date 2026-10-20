@@ -16,6 +16,12 @@ cask "cpampbar" do
 
   app "CpampBar.app"
 
+  # ad-hoc 签名（无 Developer ID）：解除 Gatekeeper 隔离，免首次手动放行
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/CpampBar.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/CpampBar",
     "~/Library/Preferences/com.biedongbin.cpampbar.plist",
