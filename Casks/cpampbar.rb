@@ -18,7 +18,7 @@ cask "cpampbar" do
 
   # ad-hoc 签名（无 Developer ID）：解除 Gatekeeper 隔离，免首次手动放行
   postflight_steps do
-    run command: "/usr/bin/xattr",
+    run "/usr/bin/xattr",
         args: ["-dr", "com.apple.quarantine", "{{appdir}}/CpampBar.app"]
   end
 
