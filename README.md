@@ -11,5 +11,7 @@ brew install --cask biedongbin/tap/cpampbar
 - **quotanest** — Floating quota HUD with scheduled API calls that try to start dynamic 5-hour usage windows.
 
 ```bash
+# Homebrew 7+: trust this cask before the first install.
+brew trust --cask biedongbin/tap/quotanest
 brew install --cask biedongbin/tap/quotanest
 ```
